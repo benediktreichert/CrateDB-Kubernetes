@@ -1,7 +1,7 @@
 # CrateDB-Kubernetes
 This CrateDB/crate/crate.io `StatefulSet` Deployment for Kubernetes 1.7 will get your [CrateDB](https://crate.io/) cluster up and running.
 
-Discory of nodes is done via DNS. Please be advised to alter the template according to your needs, for example copy-pasting this will fail since you will likely need to modify the `storageClassName` of the provisioned volumes or you're opting to deploy into a different namespace than `default`. You may also want to create an additional service to expose the web interface.
+Discovery of nodes is done via DNS. Please be advised to alter the template according to your needs. Copy-pasting will fail since you will likely need to modify the `storageClassName` of the provisioned volumes and if you opt to deploy into a different namespace other than `default`. You may also want to create an additional service to expose the web interface.
 
 I created this repo since the [official CrateDB Kubernetes template](https://crate.io/docs/crate/guide/getting_started/scale/kubernetes.html#the-cratedb-template) does not work and is still using the deprecated `PetSet` deployments (as of August 2017).
 
